@@ -75,7 +75,7 @@ done
 echo "All extensions installed and enabled!"
 ```
 
-Save and exit the editor (in `nano`, press `CTRL+X`, then `Y`).
+Save press `CTRL+O`,Exit press `CTRL+X`.
 
 ### 3. Run the Installation Script
 
