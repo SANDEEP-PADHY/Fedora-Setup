@@ -83,7 +83,7 @@ flatpak install -y flathub com.google.Chrome
 **Zen BrowseR** is a privacy-focused browser you can install for enhanced security.
 
 ```bash
-flatpak install -y flathub org.zenja.ZenBrowser
+flatpak install flathub io.github.zen_browser.zen
 ```
 
 ### 11. Install GNOME Shell Extension Manager
