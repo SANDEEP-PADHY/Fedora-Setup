@@ -52,14 +52,7 @@ For NVIDIA graphics cards, install the proprietary drivers.
 sudo dnf install -y akmod-nvidia
 ```
 
-### 6. Include Multimedia Support
-Install multimedia codecs to support various audio and video formats.
-
-```bash
-flatpak install flathub org.videolan.VLC
-```
-
-### 7. Install Flatpak
+### 6. Install Flatpak
 Install Flatpak for sandboxed applications and add the Flathub repository for easy app access.
 
 ```bash
@@ -67,7 +60,7 @@ sudo dnf install -y flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
-### 8. Install RPM Fusion Repositories
+### 7. Install RPM Fusion Repositories
 RPM Fusion provides additional software packages not available in Fedora’s official repos.
 
 ```bash
@@ -75,12 +68,18 @@ sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-r
 sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 ```
 
-### 9. Install Snap (Optional)
+### 8. Install Snap (Optional)
 Snap is another packaging format. If you prefer Snap, install Snap support.
 
 ```bash
 sudo dnf install -y snapd
 sudo systemctl enable --now snapd.socket
+```
+### 9. Include Multimedia Support
+Install multimedia codecs to support various audio and video formats.
+
+```bash
+flatpak install flathub org.videolan.VLC
 ```
 
 ### 10. Install A Browser (Optional)
