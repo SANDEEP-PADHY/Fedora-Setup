@@ -5,8 +5,8 @@ Clone this repository and run the script to install the extensions.
 ### Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+git clone https://github.com/SANDEEP-PADHY/Fedora-Setup
+cd Fedora-Setup
 ```
 
 ### Run the Installation Script
