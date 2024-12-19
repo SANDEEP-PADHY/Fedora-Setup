@@ -75,7 +75,7 @@ done
 echo "All extensions installed and enabled!"
 ```
 
-Save press `CTRL+O`,Exit press `CTRL+X`.
+Save press `CTRL+O`,Confirm press `ENTER` Exit press `CTRL+X`.
 
 ### 3. Run the Installation Script
 
