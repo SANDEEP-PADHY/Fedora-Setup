@@ -96,28 +96,35 @@ flatpak install -y flathub com.google.Chrome
 flatpak install flathub io.github.zen_browser.zen
 ```
 
-### 11. Install GNOME Shell Extension Manager
+### 11. Install GNOME Shell Extensions
+Manage GNOME extensions to customize your GNOME desktop.
+
+```bash
+flatpak install flathub org.gnome.Extensions
+```
+
+### 12. Install GNOME Shell Extension Manager
 Manage GNOME extensions to customize your GNOME desktop.
 
 ```bash
 flatpak install flathub com.mattjakeman.ExtensionManager
 ```
 
-### 12. Install GNOME Tweaks
+### 13. Install GNOME Tweaks
 GNOME Tweaks helps you customize the GNOME desktop environment.
 
 ```bash
 sudo dnf install -y gnome-tweaks
 ```
 
-### 13. Install GRUB Customizer (Optional)
+### 14. Install GRUB Customizer (Optional)
 Customize your GRUB bootloader settings (optional for advanced users).
 
 ```bash
 sudo dnf install -y grub-customizer
 ```
 
-### 14. Install Timeshift
+### 15. Install Timeshift
 Timeshift is a tool to create and restore system snapshots. Essential for system backups.
 
 ```bash
