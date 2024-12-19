@@ -9,30 +9,29 @@ Make sure your system is up to date with the latest packages and security patche
 sudo dnf update -y
 ```
 
-### 2. Configure DNF
+### 2. Use DNF5 (Optional, if available)
+DNF5 provides faster package management and enhanced features. If available, install it.
+
+```bash
+sudo dnf install -y dnf5
+```
+
+### 3. Configure DNF
 Configure DNF to limit downloads to 10 parallel downloads and use the fastest mirrors.
 
 ```bash
-# Set max parallel downloads to 10
-sudo dnf config-manager --setopt=max_parallel_downloads=10
 
-# Enable fastest mirror selection
+sudo dnf config-manager --setopt=max_parallel_downloads=10
 echo -e "[main]\nfastestmirror=true" | sudo tee -a /etc/dnf/dnf.conf
+
 ```
 
-### 3. Install Software/Firmware Updates
+### 4. Install Software/Firmware Updates
 Install available software and firmware updates.
 
 ```bash
 sudo dnf install -y dnf-plugin-system-upgrade
 sudo dnf upgrade --refresh -y
-```
-
-### 4. Use DNF5 (Optional, if available)
-DNF5 provides faster package management and enhanced features. If available, install it.
-
-```bash
-sudo dnf install -y dnf5
 ```
 
 ### 5. Install NVIDIA Drivers
