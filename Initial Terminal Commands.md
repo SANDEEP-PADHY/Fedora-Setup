@@ -56,7 +56,7 @@ sudo dnf install -y akmod-nvidia
 Install multimedia codecs to support various audio and video formats.
 
 ```bash
-sudo dnf install -y gstreamer1-plugins-bad gstreamer1-plugins-ugly gstreamer1-plugins-free gstreamer1-plugins-good ffmpeg vlc
+flatpak install flathub org.videolan.VLC
 ```
 
 ### 7. Install Flatpak
@@ -101,7 +101,7 @@ flatpak install flathub io.github.zen_browser.zen
 Manage GNOME extensions to customize your GNOME desktop.
 
 ```bash
-sudo dnf install -y gnome-shell-extension-manager
+flatpak install flathub com.mattjakeman.ExtensionManager
 ```
 
 ### 12. Install GNOME Tweaks
@@ -122,7 +122,7 @@ sudo dnf install -y grub-customizer
 Install custom cursor themes for a better visual experience.
 
 ```bash
-sudo dnf install -y xcursors
+flatpak install flathub com.github.wwmm.cursorx
 ```
 
 ### 15. Install Timeshift
