@@ -121,7 +121,8 @@ sudo dnf install -y grub-customizer
 Install custom cursor themes for a better visual experience.
 
 ```bash
-flatpak install flathub com.github.wwmm.cursorx
+git clone https://github.com/wwmm/cursorx.git && cd cursorx && sudo dnf install -y meson ninja-build gnome-shell-extension-tool && meson build --prefix=/usr && sudo ninja -C build install
+
 ```
 
 ### 15. Install Timeshift
