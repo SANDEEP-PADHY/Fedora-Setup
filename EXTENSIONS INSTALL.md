@@ -1,9 +1,9 @@
-Here's a sample `README.md` file for a Git repository that includes bash commands to install the mentioned GNOME Shell extensions using the Extension Manager:
+Here’s a simplified version of the `README.md` with only the necessary instructions for installing the GNOME Shell extensions using the provided bash script:
 
 ```markdown
-# GNOME Shell Extensions Installation Script
+# GNOME Shell Extensions Installation Script Using Extension Manager
 
-This repository provides a script to install selected GNOME Shell extensions using the Extension Manager. The extensions include:
+This repository provides a script to install and manage the following GNOME Shell extensions using **Extension Manager**:
 
 - ArcMenu
 - Blur my Shell
@@ -14,57 +14,37 @@ This repository provides a script to install selected GNOME Shell extensions usi
 - Quick Settings Audio Panel
 - TopHat
 - User Themes
-
-## Prerequisites
-
-Ensure you have the Extension Manager installed. You can install it using:
-
-```bash
-sudo apt install gnome-shell-extension-manager  # For Debian/Ubuntu-based systems
 ```
-
-For other distributions, refer to your package manager or GNOME documentation.
-
 ## Installation
 
-Clone this repository and run the script to install the extensions.
-
-### Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/SANDEEP-PADHY/Fedora-Setup
 cd Fedora-Setup
 ```
 
-### Run the Installation Script
+### 2. Create and Edit the Installation Script
+
+Create the `install-extensions.sh` script:
 
 ```bash
-bash install-extensions.sh
+touch install-extensions.sh
+chmod +x install-extensions.sh
 ```
 
-## Extensions
+Open the script with a text editor:
 
-The script installs the following extensions by their UUIDs:
+```bash
+nano install-extensions.sh
+```
 
-- **ArcMenu**: `arcmenu@arcmenu.com`
-- **Blur my Shell**: `blur-my-shell@aunetx`
-- **Coverflow Alt-Tab**: `coverflow-alt-tab@palatis.blogspot.com`
-- **Custom Hot Corners - Extended**: `custom-hot-corners-extended@G-dH.github.com`
-- **Dash to Dock**: `dash-to-dock@micxgx.gmail.com`
-- **GNOME 4x UI Improvements**: `gnome-4x-ui-improvements@leav00.new@gmail.com`
-- **Quick Settings Audio Panel**: `quick-settings-audio-panel@bennypowers`
-- **TopHat**: `tophat@inthrees.com`
-- **User Themes**: `user-theme@gnome-shell-extensions.gcampax.github.com`
-
----
-
-## Script Details
-
-Below is the content of `install-extensions.sh`:
+Paste the following code into the file:
 
 ```bash
 #!/bin/bash
 
+# List of extensions to install
 extensions=(
   "arcmenu@arcmenu.com"
   "blur-my-shell@aunetx"
@@ -77,8 +57,9 @@ extensions=(
   "user-theme@gnome-shell-extensions.gcampax.github.com"
 )
 
-echo "Starting GNOME Shell Extensions installation..."
+echo "Starting GNOME Shell Extensions installation using Extension Manager..."
 
+# Install each extension
 for extension in "${extensions[@]}"; do
   echo "Installing $extension..."
   gnome-extensions install "$extension"
@@ -86,6 +67,7 @@ done
 
 echo "Enabling extensions..."
 
+# Enable each extension
 for extension in "${extensions[@]}"; do
   gnome-extensions enable "$extension"
 done
@@ -93,11 +75,10 @@ done
 echo "All extensions installed and enabled!"
 ```
 
-## Notes
+Save and exit the editor (in `nano`, press `CTRL+X`, then `Y`).
 
-- The UUIDs of the extensions must match those listed in the GNOME Extensions website.
-- Restart GNOME Shell after installing the extensions using `Alt+F2`, type `r`, and press Enter.
-- For more information about each extension, visit the [GNOME Extensions](https://extensions.gnome.org/) website.
+### 3. Run the Installation Script
+
+```bash
+./install-extensions.sh
 ```
-
-Replace `<repository-url>` and `<repository-folder>` with your repository's URL and folder name, respectively.
