@@ -117,15 +117,7 @@ Customize your GRUB bootloader settings (optional for advanced users).
 sudo dnf install -y grub-customizer
 ```
 
-### 14. Install Custom Cursor Software (Optional)
-Install custom cursor themes for a better visual experience.
-
-```bash
-git clone https://github.com/wwmm/cursorx.git && cd cursorx && sudo dnf install -y meson ninja-build gnome-shell-extension-tool && meson build --prefix=/usr && sudo ninja -C build install
-
-```
-
-### 15. Install Timeshift
+### 14. Install Timeshift
 Timeshift is a tool to create and restore system snapshots. Essential for system backups.
 
 ```bash
