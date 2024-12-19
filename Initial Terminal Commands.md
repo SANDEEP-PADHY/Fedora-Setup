@@ -130,6 +130,14 @@ Timeshift is a tool to create and restore system snapshots. Essential for system
 ```bash
 sudo dnf install -y timeshift
 ```
+
+### 16. Install Proton Vpn
+Proton Vpn is the best free Vpn for linux.
+
+```bash
+flatpak install flathub com.protonvpn.www
+```
+
 ## Summary of the Setup:
 - **System updates** and **DNF configuration** ensure optimal performance and fast downloads.
 - **Multimedia support** and **NVIDIA drivers** are included for a rich media experience.
