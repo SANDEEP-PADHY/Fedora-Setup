@@ -16,15 +16,26 @@ DNF5 provides faster package management and enhanced features. If available, ins
 sudo dnf install -y dnf5
 ```
 
-### 3. Configure DNF
-Configure DNF to limit downloads to 10 parallel downloads and use the fastest mirrors.
 
-```bash
 
-sudo dnf config-manager --setopt=max_parallel_downloads=10
-echo -e "[main]\nfastestmirror=true" | sudo tee -a /etc/dnf/dnf.conf
+### 3 Update DNF Configuration
 
-```
+- Open the DNF configuration file:
+   ```bash
+   sudo nano /etc/dnf/dnf.conf
+   ```
+
+- Add or update the following lines in the `[main]` section:
+   ```ini
+   max_parallel_downloads=10
+   fastestmirror=true
+   ```
+
+- Save and exit:
+   - Press `Ctrl+O`, then `Enter` to save.
+   - Press `Ctrl+X` to exit.
+
+
 
 ### 4. Install Software/Firmware Updates
 Install available software and firmware updates.
