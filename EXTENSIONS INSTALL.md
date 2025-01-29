@@ -1,2 +1,2 @@
 # Install These Extensions Using Extensions Manager
-![Screenshot From 2024-12-20 21-51-23](https://github.com/user-attachments/assets/2d1f31fd-c95b-47bb-b9e5-7f95750823e0)
+![image](https://github.com/user-attachments/assets/e05ccce8-68c6-4564-b181-30b52aba050b)
